@@ -1,0 +1,228 @@
+/*The code below is strictly based on the users stories mentioned*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(270deg, #2dd4a9, #c430d4, #1cd3dd);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  font-family: 'Nunito', sans-serif;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.is-hidden {
+  display: none;
+}
+
+.game__footer {
+  position: absolute;
+  width: 105px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -60px;
+  font-size: .6em;
+  color: #fff;
+  text-align: center;
+}
+.game__footer a {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.game-intro {
+  color: #fff;
+}
+.game-intro__heading {
+  z-index: 2;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100px;
+  line-height: 100px;
+}
+.game-intro__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.game-intro__wrapper {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+.game-intro__wrapper:first {
+  left: 0;
+}
+.game-intro__wrapper:last-child {
+  left: 50%;
+}
+.game-intro__wrapper--separator {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  color: #333;
+  font-size: 1em;
+  text-align: center;
+}
+.game-intro__wrapper--single {
+  background-color: black;
+}
+.game-intro__wrapper--single:hover {
+  background-color: black;
+}
+.game-intro__wrapper--multiplay {
+  background-color: white;
+}
+.game-intro__wrapper--multiplay:hover {
+  background-color: #e6e6e6;
+}
+.game-intro__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  line-height: 200px;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.game-intro__content--large {
+  font-size: 6em;
+}
+.game-intro__content--large:hover {
+  color: green;
+}
+
+.o {
+  color: black;
+}
+
+.o:hover {
+  color: red;
+}
+
+.game-board {
+  width: 380px;
+  height: 500px;
+  margin: 5% auto;
+  padding: 5px;
+  background: rgba(255, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px 0px rgba(58, 152, 212, 0.5);
+}
+.game-board__heading {
+  clear: both;
+  height: 50px;
+  margin-top: 20px;
+}
+.game-board__score {
+  float: left;
+  width: 123px;
+  text-align: center;
+  font-weight: bold;
+}
+.game-board__score--player-one-win {
+  color: red;
+}
+.game-board__score--player-two-win {
+  color: green;
+}
+.game-board__score--draw {
+  color: darkorange;
+}
+.game-board__score-name {
+  margin-top: 5px;
+}
+.game-board__score-total {
+  display: block;
+  font-size: 1.5em;
+}
+.game-board__body {
+  clear: both;
+  width: 350px;
+  height: 400px;
+  margin: 10% auto;
+}
+
+.tic-tac-toe {
+  margin: 0px auto;
+}
+.tic-tac-toe .row {
+  margin-left: 20px;
+}
+.tic-tac-toe .row:first-child .square {
+  border-top: 0;
+}
+.tic-tac-toe .square {
+  float: left;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+  color: black;
+  border-color: #ccc;
+  font-size: 6em;
+  line-height: 1.2em;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  text-align: center;
+}
+.tic-tac-toe .square:last-child {
+  border-right: 0px;
+}
+.tic-tac-toe .x-marker {
+  color: green;
+}
+.tic-tac-toe .o-marker {
+  color: red;
+}
+
+.message {
+  margin-top: 10px;
+}
